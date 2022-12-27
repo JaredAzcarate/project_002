@@ -1,0 +1,5 @@
+.newsBox{
+    transform: translateY(-90px);
+    background: rgb(20, 20, 20);
+    border-radius: 20px;
+}

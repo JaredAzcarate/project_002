@@ -1,0 +1,28 @@
+input, textarea{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(59, 59, 59);
+    padding: 20px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+::placeholder{
+    color: rgb(255, 255, 255);
+}
+
+.submit-button{
+    width: 100%;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border: 1px solid cyan;
+  }
+
+.form-bg{
+    background-image: url(../assets/img/footer-bg.png);
+    background-size: cover;
+    padding-bottom: 100px;
+}

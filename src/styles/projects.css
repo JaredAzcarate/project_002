@@ -1,0 +1,54 @@
+.projects-text{
+    padding: 0 20%;
+}
+
+.tab-nav{
+    width: 72%;
+    margin: 0 auto;
+    border: 1px solid grey;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.projects .tab-nav .nav-item{
+    width: 33.3%;
+}
+
+.projects .tab-nav .nav-item .nav-link{
+    color: grey;
+    padding: 20px !important;
+    position: relative;
+}
+
+.projects .tab-nav .nav-item .nav-link::before{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #00fff2 0%, #4A2FBD 150%);
+    z-index: -1;
+    transition: .5s ease-in-out;
+}
+
+.projects .tab-nav .nav-item .nav-link:hover{
+    color: white;
+}
+
+.projects .tab-nav .nav-item .nav-link.active{
+    color: white;
+}
+
+.projects .tab-nav .nav-item .nav-link.active::before{
+    width: 100%
+}
+
+
+.tab-grid{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    transition: .5s ease-in-out;
+}

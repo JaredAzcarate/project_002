@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+/* Custom Fonts */
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Bold.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Medium.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Book.ttf');
+	font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+/* General Styles */
+*{
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body{
+  background: black !important;
+  color: white !important;
+  font-family: Centra !important;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+  padding: 0;
+  margin: 0;
+}
+
+
+a, p, li, ul{
+  padding: 0 !important;
+  margin: 0 !important;
+  text-transform: none;
+}
+
+button{
+  padding: 18px;
+  background: transparent ;
+  border: 1px solid white;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+img{
+  height: auto;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+
+.App{
+  height: 150vh;
+}
+
+
+.danger{
+  background: white;
+  color: red;
+}
+
+.ok{
+  background: white;
+  color: green;
 }
